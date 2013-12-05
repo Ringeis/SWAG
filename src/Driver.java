@@ -3,6 +3,7 @@
  *
  */
 
+import java.awt.Component;
 import javax.swing.JFrame;
 import javax.swing.SwingUtilities;
 
@@ -22,7 +23,6 @@ public class Driver {
 	private static void createAndShowGUI(){
 		JFrame jf = new JFrame();
 		jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		jf.setResizable(false);
 		jf.add(new GamePanel());
 		jf.pack();
 		jf.setLocationRelativeTo(null);
