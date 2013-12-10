@@ -1,3 +1,5 @@
 The Strange and Wondrous Adventures of Gimpy (SWAG)
 
 Side-Scrolling Beat'em Up style game developed in Java using the swing and awt API's.
+
+Controls are wsad to move and space to attack enemies in front of (currently only to the right of) gimpy.

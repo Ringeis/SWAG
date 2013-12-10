@@ -14,13 +14,13 @@ public class Levels {
 	int[] joePos = {0,210}; //Change name to Gimpy!
 	
 	public void levelOne(int[] joePos, int[][] enemyPos){
-		if((Math.abs(joePos[0]-enemyPos[0][0])>=25) || (Math.abs(joePos[1]-enemyPos[0][1])>=25)){ //Stop if too close to target!
-    		findJoe(enemyPos[0], 0);
-    		findJoe(enemyPos[1], 1);
-    		findJoe(enemyPos[2], 2);
-    	}else{
-    		System.exit(0);
-    	}
+		for(int i = 0; i < 3; i++){
+			if((Math.abs(joePos[0]-enemyPos[i][0])>=25) || (Math.abs(joePos[1]-enemyPos[i][1])>=25)){ //Stop if too close to target!
+				findJoe(enemyPos[i], i);
+			}else{
+				System.exit(0);
+			}
+		}
     }
 	
 	public void levelTwo(int[] joePos, int[][] enemyPos){

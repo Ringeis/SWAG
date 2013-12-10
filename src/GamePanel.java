@@ -128,7 +128,7 @@ public class GamePanel extends JPanel implements KeyListener { //CHANGE NAME OF 
 		}
 		if(isKeyPressed(32)){
 			int num;
-			if(combat.hitRegister(joePunch, level.enemyPos)){
+			if(combat.hitRegister(joePunch, level.enemyPos)){ //If joe's attack lands
 				combat.enemySpawner();
 				level.enemyPos[combat.enemyID][0]=combat.spawnX;
 				level.enemyPos[combat.enemyID][1]=combat.spawnY;
